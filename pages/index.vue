@@ -36,7 +36,7 @@
     <section id="about-me">
       <v-parallax :height="$vuetify.breakpoint.smAndDown ? 900 : 600" src="/devback3.jpg">
         <v-container class="text-center white black--text">
-          <h2 class="display-2 font-weight-bold mb-3">ABOUT ME</h2>
+          <h2 class="display-2 font-weight-bold mb-3">WHAT I DO</h2>
 
           <v-responsive class="mx-auto mb-8" width="56">
             <v-divider class="mb-1"></v-divider>
@@ -45,14 +45,12 @@
           </v-responsive>
 
           <v-responsive class="mx-auto title font-weight-light mb-8" max-width="720">
-            In west Philadelphia born and raised
-            On the playground was where I spent most of my days
-            Chillin' out maxin' relaxin' all cool
-            And all shooting some b-ball outside of the school
-            When a couple of guys who were up to no good
-            Started making trouble in my neighborhood
-            I got in one little fight and my mom got scared
-            She said, "You're movin' with your auntie and uncle in Bel-Air"
+            Hello! My name is Tyler, and I want to build your website. I want to work with you
+            to create something that will help your business or pursuit stand out. Whatever you envision
+            as the perfect website for you, I want to help you get it. I am a Web Developer based in Kansas City, 
+            and I have been working, learning, and perfecting my art so that I can help people like yourself fulfull
+            your passions. I want to help you put your ideas on the internet, because once it's on the internet, 
+            it's real. Let's work together to create something awesome. 
           </v-responsive>
 
           <v-avatar class="elevation-12 mb-12" size="128">
@@ -123,7 +121,7 @@
       <div class="py-12"></div>
 
       <v-container>
-        <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Blog</h2>
+        <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Recent Projects</h2>
 
         <v-responsive class="mx-auto mb-12" width="56">
           <v-divider class="mb-1"></v-divider>
@@ -139,7 +137,7 @@
 
             <div class="title font-weight-light mb-5" v-text="text"></div>
 
-            <v-btn class="ml-n4 font-weight-black" text>Continue Reading</v-btn>
+            <v-btn class="ml-n4 font-weight-black" text>Visit Site</v-btn>
           </v-col>
         </v-row>
       </v-container>
