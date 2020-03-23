@@ -47,10 +47,10 @@
           <v-responsive class="mx-auto title font-weight-light mb-8" max-width="720">
             Hello! My name is Tyler, and I want to build your website. I want to work with you
             to create something that will help your business or pursuit stand out. Whatever you envision
-            as the perfect website for you, I want to help you get it. I am a Web Developer based in Kansas City, 
+            as the perfect website for you, I want to help you get it. I am a Web Developer based in Kansas City,
             and I have been working, learning, and perfecting my art so that I can help people like yourself fulfull
-            your passions. I want to help you put your ideas on the internet, because once it's on the internet, 
-            it's real. Let's work together to create something awesome. 
+            your passions. I want to help you put your ideas on the internet, because once it's on the internet,
+            it's real. Let's work together to create something awesome.
           </v-responsive>
 
           <v-avatar class="elevation-12 mb-12" size="128">
@@ -132,12 +132,13 @@
         <v-row>
           <v-col v-for="({ src, text, title }, i) in articles" :key="i" cols="12" md="4">
             <v-img :src="src" class="mb-4" height="275" max-width="100%"></v-img>
+            <div class="projects-card">
+              <h3 class="font-weight-black mb-4 text-uppercase" v-text="title"></h3>
 
-            <h3 class="font-weight-black mb-4 text-uppercase" v-text="title"></h3>
+              <div class="title font-weight-light mb-5" v-text="text"></div>
 
-            <div class="title font-weight-light mb-5" v-text="text"></div>
-
-            <v-btn class="ml-n4 font-weight-black" text>Visit Site</v-btn>
+              <v-btn class="ml-n4 font-weight-black" text>Visit Site</v-btn>
+            </div>
           </v-col>
         </v-row>
       </v-container>
@@ -194,46 +195,53 @@ export default {
       articles: [
         {
           src:
-            'https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-          title: 'Mobile first & Responsive',
+            '/coffee-proj.jpg',
+          title: 'KC Home Barista',
           text:
-            'Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum.'
+            'Barista Tutorial and Coffee Education website. This site was built using Nuxt.js, Vuetify, and boats an Express/Node backend and a SQL database. '
         },
         {
           src:
-            'https://images.unsplash.com/photo-1475938476802-32a7e851dad1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-          title: 'Think outside the box',
+            '/comic-proj.jpg',
+          title: 'My Hero Comics',
           text:
-            'Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.'
+            'This website is a comic book lookup and collection tracking website. This site uses Handlebars, Sequelize, and Passport.js for Authentication'
         },
         {
           src:
-            'https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1892&q=80',
-          title: 'Small changes, big difference',
+            '/event-proj.jpg',
+          title: 'Real World Events',
           text:
-            'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.'
+            'This is an event lookup website, that allows event creation and tracking. It is built on Nuxt.js, Bootstrap, and SQL on the back end. '
         }
       ],
       features: [
         {
           icon: 'mdi-account-group-outline',
           title: 'Client-Side',
-          text: 'HTML5, CSS, JavaScript, React.js, Vue.js, Vuex, Nuxt.js, JQUERY, BootStrap, MaterializeCSS, Vuetify'
+          text:
+            'HTML5, CSS, JavaScript, React.js, Vue.js, Vuex, Nuxt.js, JQUERY, BootStrap, MaterializeCSS, Vuetify'
         },
         {
           icon: 'mdi-update',
           title: 'Server-Side',
-          text: 'Node.js, Express, Passport.js, API Creation, MongoDB, mySQL, Mongoose.js, Sequelize'
+          text:
+            'Node.js, Express, Passport.js, API Creation, MongoDB, mySQL, Mongoose.js, Sequelize'
         },
         {
           icon: 'mdi-shield-outline',
           title: 'Concepts and Technologies',
-          text: 'Best Practice Coding, Code Linting, MVC, Git Collaboration, Development to Production Builds, Application Deployment, Domain Management'
+          text:
+            'Best Practice Coding, Code Linting, MVC, Git Collaboration, Development to Production Builds, Application Deployment, Domain Management'
         }
       ],
       stats: [
         ['GitHub', 'Check out My Projects', 'https://github.com/tboyd4'],
-        ['LinkedIn', 'Get Connected!', 'https://www.linkedin.com/in/tyler-boyd-a40770198/'],
+        [
+          'LinkedIn',
+          'Get Connected!',
+          'https://www.linkedin.com/in/tyler-boyd-a40770198/'
+        ],
         ['Resume', 'Take a Look at My Experience', '/tyler boyd.pdf']
       ]
     }
@@ -242,8 +250,11 @@ export default {
 </script>
 
 style <style scoped>
-  .links {
-    text-decoration: none;
-    color: white;
-  }
+.links {
+  text-decoration: none;
+  color: white;
+}
+.projects-card {
+  height: 300px;
+}
 </style>
