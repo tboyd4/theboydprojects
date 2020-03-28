@@ -1,31 +1,25 @@
 <template>
-  <section id="blog">
-    <div class="py-12"></div>
+  <section id="projects">
+    <v-responsive class="mx-auto mb-12" width="56">
+      <v-divider class="mb-1"></v-divider>
 
-    <v-container>
-      <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Recent Projects</h2>
+      <v-divider></v-divider>
+    </v-responsive>
 
-      <v-responsive class="mx-auto mb-12" width="56">
-        <v-divider class="mb-1"></v-divider>
+    <v-row>
+      <v-col v-for="({ src, text, title, url }, i) in articles" :key="i" cols="12" md="4">
+        <v-img :src="src" class="mb-4" height="275" max-width="100%"></v-img>
+        <div class="projects-card">
+          <h3 class="font-weight-black mb-4 text-uppercase" v-text="title"></h3>
 
-        <v-divider></v-divider>
-      </v-responsive>
+          <div class="title font-weight-light mb-5" v-text="text"></div>
 
-      <v-row>
-        <v-col v-for="({ src, text, title, url }, i) in articles" :key="i" cols="12" md="4">
-          <v-img :src="src" class="mb-4" height="275" max-width="100%"></v-img>
-          <div class="projects-card">
-            <h3 class="font-weight-black mb-4 text-uppercase" v-text="title"></h3>
-
-            <div class="title font-weight-light mb-5" v-text="text"></div>
-
-            <a :href="url" class="link-decor"><v-btn class="ml-n4 font-weight-black" text>Visit Site</v-btn></a>
-          </div>
-        </v-col>
-      </v-row>
-    </v-container>
-
-    <div class="py-6"></div>
+          <a :href="url" class="link-decor">
+            <v-btn class="ml-n4 font-weight-black" text>Visit Site</v-btn>
+          </a>
+        </div>
+      </v-col>
+    </v-row>
   </section>
 </template>
 

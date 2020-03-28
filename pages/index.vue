@@ -5,6 +5,11 @@
     <Profs></Profs>
     <Links></Links>
     <Projs></Projs>
+    <v-container>
+       <v-row>
+        <nuxt-link to="/projects" class="link-decor"><v-btn class="ml-n4 font-weight-black" text>See More Projects</v-btn></nuxt-link>
+      </v-row>
+    </v-container>
     <Contact></Contact>
   </v-content>
 </template>
@@ -30,4 +35,8 @@ export default {
 }
 </script>
 
-style <style scoped></style>
+style <style scoped>
+.link-decor {
+  text-decoration: none;
+}
+</style>
