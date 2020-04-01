@@ -4,7 +4,6 @@
     <v-container>
       <div class="py-12"></div>
       <ProjectsGrid></ProjectsGrid>
-      <ProjectsGrid></ProjectsGrid>
       <div class="py-6"></div>
     </v-container>
   </div>
