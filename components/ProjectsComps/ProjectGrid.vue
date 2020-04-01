@@ -34,7 +34,16 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+      projects: [
+        {link: "#", picture: "#"},
+        {link: "#", picture: "#"},
+        {link: "#", picture: "#"},
+        {link: "#", picture: "#"},
+        {link: "#", picture: "#"},
+        {link: "#", picture: "#"},
+      ]
+    }
   }
 }
 </script>
