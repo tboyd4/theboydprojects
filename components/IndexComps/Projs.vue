@@ -46,7 +46,7 @@ export default {
           title: 'My Hero Comics',
           text:
             'This website is a comic book lookup and collection tracking website. This site uses Handlebars, Sequelize, and Passport.js for Authentication',
-          url: 'https://myherocomics.herokuapp.com/'
+          url: '#'
         },
         {
           src: '/event-proj.jpg',
