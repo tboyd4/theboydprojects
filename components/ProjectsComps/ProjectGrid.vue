@@ -5,12 +5,11 @@
         <v-card>
           <v-container fluid>
             <v-row>
-              <v-col v-for="n in 9" :key="n" class="d-flex child-flex" cols="4">
-                <a href="https://www.reddit.com">
+              <v-col v-for="project in projects" :key="project" class="d-flex child-flex" cols="4">
+                <a :href="project.link">
                   <v-card flat tile class="d-flex project-photo">
                     <v-img
-                      :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-                      :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+                      :src="project.picture"
                       aspect-ratio="1"
                       class="grey lighten-2"
                     >
@@ -36,12 +35,12 @@ export default {
   data() {
     return {
       projects: [
-        {link: "#", picture: "#"},
-        {link: "#", picture: "#"},
-        {link: "#", picture: "#"},
-        {link: "#", picture: "#"},
-        {link: "#", picture: "#"},
-        {link: "#", picture: "#"},
+        {link: "https://www.google.com", picture: "#"},
+        {link: "https://www.google.com", picture: "#"},
+        {link: "https://www.google.com", picture: "#"},
+        {link: "https://www.google.com", picture: "#"},
+        {link: "https://www.google.com", picture: "#"},
+        {link: "https://www.google.com", picture: "#"},        
       ]
     }
   }
