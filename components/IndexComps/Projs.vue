@@ -35,25 +35,25 @@ export default {
     return {
       articles: [
         {
-          src: '/coffee-proj.jpg',
-          title: 'KC Home Barista',
+          src: '/vuetify.png',
+          title: 'Dashboard Application',
           text:
-            'Barista Tutorial and Coffee Education website. This site was built using Nuxt.js, Vuetify, and boasts an Express/Node backend and a SQL database. ',
-          url: '#'
+            'Application to Showcase a Dashboard built with Vue + Vuetify.',
+          url: 'https://vuetify-dashboard-34123.herokuapp.com/'
         },
         {
-          src: '/comic-proj.jpg',
-          title: 'My Hero Comics',
+          src: '/budget.jpg',
+          title: 'Budget Tracker',
           text:
-            'This website is a comic book lookup and collection tracking website. This site uses Handlebars, Sequelize, and Passport.js for Authentication',
-          url: '#'
+            'Budget Tracker Application, with Offline Functionality',
+          url: 'https://new-budget-tracker-1231.herokuapp.com/'
         },
         {
-          src: '/event-proj.jpg',
-          title: 'Real World Events',
+          src: '/IMG_0570.jpg',
+          title: 'Lindsey Renae Photography',
           text:
-            'This is an event lookup website, that allows event creation and tracking. It is built on Nuxt.js, Bootstrap, and SQL on the back end. ',
-          url: 'https://secure-dawn-98530.herokuapp.com/'
+            'Photography Portfolio for Lindsey Renae Photo.',
+          url: 'https://www.lindseyrenaephoto.com/'
         }
       ]
     }
