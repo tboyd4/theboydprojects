@@ -1,10 +1,10 @@
 <template>
   <section id="hero">
     <v-row no-gutters>
-      <v-img :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'" src="/frontpage.jpg">
+      <v-img :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'" src="/main-page.jpg">
         <v-theme-provider dark>
           <v-container fill-height>
-            <v-row align="center" class="black--text mx-auto" justify="center">
+            <v-row class="black--text mx-auto" justify="center">
               <v-col class="black--text text-center" cols="12" tag="h1">
                 <span
                   class="font-weight-black"
