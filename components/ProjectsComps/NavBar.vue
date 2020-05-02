@@ -1,7 +1,7 @@
 <template>
   <v-app-bar app color="black" height="100">
     <nuxt-link class="link-decor" to="/">
-      <h1 class="white--text display-1 font-weight-thin text-uppercase">Go Back</h1>
+      <h1 class="white--text display-1 font-weight-bold text-uppercase">Go Back</h1>
     </nuxt-link>
     <v-spacer></v-spacer>
     <h2 class="display-1 font-weight-bold mb-3 text-uppercase text-center">Recent Projects</h2>

@@ -12,7 +12,7 @@
       </v-responsive>
 
       <v-row>
-        <v-col v-for="({ src, text, title, url }, i) in articles" :key="i" cols="12" md="4">
+        <v-col v-for="({ src, text, title, url }, i) in projects" :key="i" cols="12" md="4">
           <v-img :src="src" class="mb-4" height="275" max-width="100%"></v-img>
           <div class="projects-card">
             <h3 class="font-weight-black mb-4 text-uppercase" v-text="title"></h3>
@@ -23,6 +23,8 @@
           </div>
         </v-col>
       </v-row>
+
+      <v-btn to="projects">See More Projects</v-btn>
     </v-container>
 
     <div class="py-6"></div>
@@ -33,7 +35,7 @@
 export default {
   data() {
     return {
-      articles: [
+      projects: [
         {
           src: '/vuetify.png',
           title: 'Dashboard Application',

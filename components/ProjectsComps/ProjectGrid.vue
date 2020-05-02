@@ -1,32 +1,35 @@
 <template>
-  <section id="projects">
-    <v-row>
-      <v-col cols="12" sm="6" offset-sm="3">
-        <v-card>
-          <v-container fluid>
-            <v-row>
-              <v-col v-for="project in projects" :key="project" class="d-flex child-flex" cols="4">
-                <a :href="project.link">
-                  <v-card flat tile class="d-flex project-photo">
-                    <v-img
-                      :src="project.picture"
-                      aspect-ratio="1"
-                      class="grey lighten-2"
-                    >
-                      <template v-slot:placeholder>
-                        <v-row class="fill-height ma-0" align="center" justify="center">
-                          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                        </v-row>
-                      </template>
-                    </v-img>
-                  </v-card>
-                </a>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
-      </v-col>
-    </v-row>
+  <section id="blog">
+    <v-container>
+      <v-responsive class="mx-auto mb-12" width="56">
+        <v-divider></v-divider>
+      </v-responsive>
+
+      <v-row>
+        <v-col
+          v-for="({ src, text, title, url }, i) in projects"
+          :key="i"
+          cols="12"
+          md="4"
+        >
+          <v-img :src="src" class="mb-4" height="275" max-width="100%"></v-img>
+          <div class="projects-card">
+            <h3
+              class="font-weight-black mb-4 text-uppercase"
+              v-text="title"
+            ></h3>
+
+            <div class="title font-weight-light mb-5" v-text="text"></div>
+
+            <a :href="url" class="link-decor"
+              ><v-btn class="ml-n4 font-weight-black" text>Visit Site</v-btn></a
+            >
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <div class="py-3"></div>
   </section>
 </template>
 
@@ -35,30 +38,53 @@ export default {
   data() {
     return {
       projects: [
-        {link: "https://www.google.com", picture: "#"},
-        {link: "https://www.google.com", picture: "#"},
-        {link: "https://www.google.com", picture: "#"},
-        {link: "https://www.google.com", picture: "#"},
-        {link: "https://www.google.com", picture: "#"},
-        {link: "https://www.google.com", picture: "#"},        
+        {
+          src: '/vuetify.png',
+          title: 'Dashboard Application',
+          text: 'Application to Showcase a Dashboard built with Vue + Vuetify.',
+          url: 'https://vuetify-dashboard-34123.herokuapp.com/'
+        },
+        {
+          src: '/budget.jpg',
+          title: 'Budget Tracker',
+          text: 'Budget Tracker Application, with Offline Functionality',
+          url: 'https://new-budget-tracker-1231.herokuapp.com/'
+        },
+        {
+          src: '/IMG_0570.jpg',
+          title: 'Lindsey Renae Photography',
+          text: 'Photography Portfolio for Lindsey Renae Photo.',
+          url: 'https://www.lindseyrenaephoto.com/'
+        },
+        {
+          src: '/vuetify.png',
+          title: 'Dashboard Application',
+          text: 'Application to Showcase a Dashboard built with Vue + Vuetify.',
+          url: 'https://vuetify-dashboard-34123.herokuapp.com/'
+        },
+        {
+          src: '/budget.jpg',
+          title: 'Budget Tracker',
+          text: 'Budget Tracker Application, with Offline Functionality',
+          url: 'https://new-budget-tracker-1231.herokuapp.com/'
+        },
+        {
+          src: '/IMG_0570.jpg',
+          title: 'Lindsey Renae Photography',
+          text: 'Photography Portfolio for Lindsey Renae Photo.',
+          url: 'https://www.lindseyrenaephoto.com/'
+        }
       ]
     }
   }
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .projects-card {
   height: 300px;
 }
 .link-decor {
   text-decoration: none;
-}
-.project-photo {
-  cursor: pointer;
-}
-.project-photo:hover {
-  border: solid white 2px;
-  box-shadow: white 0 1px 1px;
 }
 </style>
