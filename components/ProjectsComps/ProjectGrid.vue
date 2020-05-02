@@ -57,22 +57,22 @@ export default {
           url: 'https://www.lindseyrenaephoto.com/'
         },
         {
-          src: '/vuetify.png',
-          title: 'Dashboard Application',
-          text: 'Application to Showcase a Dashboard built with Vue + Vuetify.',
-          url: 'https://vuetify-dashboard-34123.herokuapp.com/'
+          src: '/notes-img.jpeg',
+          title: 'Knowtepad Note Taking',
+          text: 'Note Taking and Saving Application, built with JavaScript',
+          url: 'https://afternoon-castle-15258.herokuapp.com/'
         },
         {
-          src: '/budget.jpg',
-          title: 'Budget Tracker',
-          text: 'Budget Tracker Application, with Offline Functionality',
-          url: 'https://new-budget-tracker-1231.herokuapp.com/'
+          src: '/flooring-img.jpg',
+          title: 'Flooring Company Website',
+          text: 'Website for Local Flooring Company, to display info and show work. ',
+          url: 'https://gallant-dijkstra-f572c4.netlify.app/'
         },
         {
-          src: '/IMG_0570.jpg',
-          title: 'Lindsey Renae Photography',
-          text: 'Photography Portfolio for Lindsey Renae Photo.',
-          url: 'https://www.lindseyrenaephoto.com/'
+          src: '/events-img.jpg',
+          title: 'Event Tracking',
+          text: 'Application to display events received from database, using Nuxt.js',
+          url: 'https://nifty-thompson-b0a8ab.netlify.app/'
         }
       ]
     }
